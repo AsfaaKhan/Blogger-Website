@@ -21,7 +21,7 @@ export default async function BlogPage(){
 
 const posts : IPost[] =  await client.fetch(query)
 
-console.log( posts);
+// console.log( posts);
 
 
 

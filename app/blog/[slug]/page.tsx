@@ -6,6 +6,7 @@ import Image from "next/image";
 import Comment from "@/components/Comment";
 import Container from "@/components/Container";
 
+
 export const revalidate = 10 //seconds
 
 
@@ -59,6 +60,7 @@ export default async function page({ params: { slug } }: { params: { slug: strin
 
           {/* Author Section (Name ,Image & Bio) */}
           <section className=" flex gap-2 xs:gap-4 sm:gap-6 items-start xs:items-center justify-start">
+
             <Image
             src={urlForImage(post.author.image)}
               width={200}
@@ -66,6 +68,7 @@ export default async function page({ params: { slug } }: { params: { slug: strin
               alt="author"
               className="object-cover rounded-full h-12 w-12 sm:h-24 sm:w-24"
             />
+
             <div className="flex flex-col gap-1">
               <h3 className="text-xl font-bold text-black dark:text-white">{post.author.name}</h3>
               <p className="italic text-xs xs:text-sm sm:text-base text-black/80 dark:text-white/80">

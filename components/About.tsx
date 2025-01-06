@@ -32,7 +32,7 @@ export default function About() {
                 </div>
                 <div className=" flex justify-center items-center">
                     <p className="w-[300px] md:w-[500px] ">
-                        {` Welcome to my corner of the digital world! This blog is dedicated to the fascinating and ever-evolving fields of Web Development, Programming, Artificial Intelligence, Design, and more. I share insights, tutorials, tips, and inspiration across a range of topics that I’m passionate about. Here's what you'll find on my blog`}
+                        {` This blog explores the habits and daily rituals of successful individuals, highlighting practices like early rising, prioritizing health, setting goals, and continuous learning. It emphasizes how consistency in routines can lead to long-term success and offers actionable tips to incorporate these habits into your own life.`}
                     </p>
                 </div>
                 <div className="flex gap-5  ">
