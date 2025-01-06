@@ -1,5 +1,4 @@
 import {PortableTextComponents} from '@portabletext/react'
-import { Children } from 'react'
 import { Dancing_Script } from 'next/font/google'
 
 const Font2 = Dancing_Script({
