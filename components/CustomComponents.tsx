@@ -23,6 +23,7 @@ export const Components :PortableTextComponents= {
     },
     list:{
         bullet:({children}) =><li className='list-none list-inside ml-6 py-3 '>{children}</li>,
+        
     },
     marks:{
         strong:({children})=><

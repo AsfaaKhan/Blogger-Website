@@ -15,7 +15,7 @@ export default async function page({ params: { slug } }: { params: { slug: strin
     (`*[_type=='post' && slug.current == "${slug}" ] {
   title,summary,image,content,
     author->{bio,image,name}
-}[0]`);
+}`);
 
 
   return (
