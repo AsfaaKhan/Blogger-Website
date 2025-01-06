@@ -30,7 +30,7 @@ console.log( posts);
         <div>
              <Container>
         {/* Blogs */}
-        <main className="flex min-h-screen flex-col my-5">
+        <main className="flex min-h-screen flex-col my-5 mt-32">
           <h1 className={`text-4xl font-bold text-bolg mb-5    text-center text-blue-950 dark:text-white sm:text-5xl lg:text-8xl underline ${Font2.className}`}>
          {` "Explore These Interesting Topics"`} 
           </h1>

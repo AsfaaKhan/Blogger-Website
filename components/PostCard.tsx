@@ -15,18 +15,26 @@ export default function PostCard({ post }: { post: IPost }) {
     return (
         <>
             <div>
-                <Card>
+                <Card className="hover:scale-105 transition-transform ease-out duration-700">
                     <CardHeader>
-                        <Image
-                            src={urlForImage(post.image)}
-                            alt="AI for everyone"
-                            fill
-                            className="object-cover rounded-t"
-                        />
-                        <CardTitle>{post.title}</CardTitle>
+                        <CardTitle className=" flex flex-col justify-center items-center  gap-3">
+                            <div>
+                                <Image
+                                    src={urlForImage(post.image)}
+                                    alt="AI for everyone"
+
+                                    width={400}
+                                    height={300}
+                                    className="object-cover rounded-t"
+                                />
+                            </div>
+                            <div> <h1 className=" bolg ">
+                                {post.title}
+                            </h1></div>
+                        </CardTitle>
                         <CardDescription className=" line-clamp-2">{post.summary}</CardDescription>
                     </CardHeader>
-                    <CardContent>
+                    <CardContent className=" line-clamp-3">
                         {post.summary}
                     </CardContent>
                     <CardFooter>
