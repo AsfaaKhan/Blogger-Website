@@ -32,7 +32,7 @@ console.log( posts);
         {/* Blogs */}
         <main className="flex min-h-screen flex-col my-5">
           <h1 className={`text-4xl font-bold text-bolg mb-5    text-center text-blue-950 dark:text-white sm:text-5xl lg:text-8xl underline ${Font2.className}`}>
-            Trending Topics
+         {` "Explore These Interesting Topics"`} 
           </h1>
           <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
             {
@@ -40,7 +40,6 @@ console.log( posts);
                 <PostCard post={post} key={post.slug} />
               ))
             }
-
           </section>
         </main>
 

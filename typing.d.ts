@@ -1,6 +1,6 @@
 interface IPost {
     title: string,
     summary: string,
-    image: string,
+    image: any,
     slug: string
 }

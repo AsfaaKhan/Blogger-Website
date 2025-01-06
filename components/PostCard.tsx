@@ -7,26 +7,35 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
+import { urlForImage } from "@/sanity/lib/image"
+import Link from "next/link"
 
 
-export default function PostCard( {post} : {post : IPost}) {
+export default function PostCard({ post }: { post: IPost }) {
     return (
         <>
             <div>
                 <Card>
                     <CardHeader>
-                        <Image src={"/"}
-                        alt={post.title}
-                        width={500} height={400}></Image>
-                        <CardTitle>{
-                    post.title}</CardTitle>
-                        <CardDescription>{post.summary}</CardDescription>
+                        <Image
+                            src={urlForImage(post.image)}
+                            alt="AI for everyone"
+                            fill
+                            className="object-cover rounded-t"
+                        />
+                        <CardTitle>{post.title}</CardTitle>
+                        <CardDescription className=" line-clamp-2">{post.summary}</CardDescription>
                     </CardHeader>
                     <CardContent>
-                        <p></p>
+                        {post.summary}
                     </CardContent>
                     <CardFooter>
-                        <p>Card Footer</p>
+                        <Link
+                            href={`/blog/${post.slug}`}
+                            className="block px-4 py-2  hover:bg-blue-900 text-center bg-blue-950  rounded text-white font-semibold mt-4"
+                        >
+                            See More ..
+                        </Link>
                     </CardFooter>
                 </Card>
 
