@@ -25,9 +25,10 @@ export const Components :PortableTextComponents= {
         bullet:({children}) =><li className='list-none list-inside ml-6 py-3 '>{children}</li>,
     },
     marks:{
-        strong:({children})=><strong className='italic'>{children}</strong>,
-        em:({children})=><em className='text-gray-700'>{children}</em>
-
+        strong:({children})=><
+        strong className='italic'>{children}</strong>,
+        em:({children})=>
+        <em className='text-gray-700'>{children}</em>
     }
 
 }
