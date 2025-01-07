@@ -19,6 +19,7 @@ export default async function page({ params: { slug } }: { params: { slug: strin
 }`);
 
 
+
   return (
     <Container>
     <article className="mt-32 mb-24 px-2 2xl:px-12 flex flex-col gap-y-8">
