@@ -14,7 +14,7 @@ export const revalidate = 10 // seconds
 export default async function BlogPage(){
 
     const query = `
-        *[_type == "post"] | order(_createdAt desc){
+        *[_type == "post"]{
   title,image,summary,
     "slug": slug.current
 }`

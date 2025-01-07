@@ -58,7 +58,7 @@ export default async function page({ params: { slug } }: { params: { slug: strin
             {post.summary}
           </p>
 
-          {/* Author Section (Name ,Image & Bio) */}
+          {/* Author Section (Name,Image & Bio) */}
           <section className=" flex gap-2 xs:gap-4 sm:gap-6 items-start xs:items-center justify-start">
 
             <Image
@@ -66,8 +66,7 @@ export default async function page({ params: { slug } }: { params: { slug: strin
               width={200}
               height={200}
               alt="author"
-              className="object-cover rounded-full h-12 w-12 sm:h-24 sm:w-24"
-            />
+              className="object-cover rounded-full h-12 w-12 sm:h-24 sm:w-24"/>
 
             <div className="flex flex-col gap-1">
               <h3 className="text-xl font-bold text-black dark:text-white">{post.author.name}</h3>
