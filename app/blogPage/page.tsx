@@ -14,15 +14,12 @@ export const revalidate = 10 // seconds
 export default async function BlogPage() {
 
   const posts: IPost[] = await client.fetch(`
-       *[_type == "post" ]| order(_createdAt desc){
-  title,image,summary,
-    "slug": slug.current
+       *[_type == "post"]| order(_createdAt desc)
+       {
+       title,image,summary,   
+       "slug": slug.current,
 }`)
-
-  console.log( posts);
-
-
-
+  console.log(posts);
   return (
 
     <div>
@@ -40,7 +37,6 @@ export default async function BlogPage() {
             }
           </section>
         </main>
-
         {/* Comment */}
         <Comment />
       </Container>
