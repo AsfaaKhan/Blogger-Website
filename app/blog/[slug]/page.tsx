@@ -12,11 +12,10 @@ export const revalidate = 10 //seconds
 
 export default async function page({ params: { slug } }: { params: { slug: string } }) {
 
-  const post = await client.fetch
-    (`*[_type=='post' && slug.current == "${slug}" ] {
+  const post = await client.fetch(`*[_type=='post' && slug.current == "${slug}" ] {
   title,summary,image,content,
     author->{bio,image,name}
-}`);
+}[0]`);
   console.log(post)
 
   return (
